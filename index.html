@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/style.css">
+       <script src="script.js" type="module"></script> 
+</head>
+<body>
+
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <select id="generation-select" aria-label="Kies een generatie"></select>
+            <div id="sort-buttons">
+                <button data-sort="id-asc">Index ▲</button>
+                <button data-sort="id-desc">Index ▼</button>
+                <button data-sort="name-asc">Naam A-Z</button>
+                <button data-sort="name-desc">Naam Z-A</button>
+            </div>
+        </div>
+        <div class="control-group">
+            <input type="search" id="search-input" placeholder="Zoek Pokémon...">
+            <div id="type-filter-buttons"></div>
+        </div>
+    </div>
+
+    <main id="pokedex-container"></main>
+
+    <div id="pokemon-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="loader" class="loader" style="display: none;"></div>
+    
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <p>Wij gebruiken functionele cookies om de Pokedex-ervaring te verbeteren. Door verder te gaan, ga je akkoord.</p>
+        <button id="accept-cookies">Akkoord</button>
+    </div>
+
+</body>
+</html>

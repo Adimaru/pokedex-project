@@ -1,0 +1,11 @@
+export const generationSelect = document.getElementById('generation-select');
+export const pokedexContainer = document.getElementById('pokedex-container');
+export const searchInput = document.getElementById('search-input');
+export const sortButtons = document.getElementById('sort-buttons');
+export const typeFilterContainer = document.getElementById('type-filter-buttons');
+export const loader = document.getElementById('loader');
+export const modal = document.getElementById('pokemon-modal');
+export const modalBody = document.getElementById('modal-body');
+export const closeModalButton = document.querySelector('.close-button');
+export const cookieBanner = document.getElementById('cookie-banner');
+export const acceptCookiesButton = document.getElementById('accept-cookies');
