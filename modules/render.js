@@ -73,8 +73,8 @@ export const showPokemonDetails = async (pokemon) => {
 };
 
 export const populateGenerationDropdown = async (generationSelectElement) => {
-    const { API_URL } = await import('./state.js'); // Import API_URL here to avoid circular dependency with api.js
-    const { fetchData } = await import('./api.js'); // Import fetchData here
+    const { API_URL } = await import('./state.js'); 
+    const { fetchData } = await import('./api.js'); 
 
     const data = await fetchData(`${API_URL}generation`);
     if (!data || !data.results) return;
@@ -93,9 +93,9 @@ export const populateGenerationDropdown = async (generationSelectElement) => {
 };
 
 export const populateTypeFilters = async (typeFilterContainerElement) => {
-    const { API_URL } = await import('./state.js'); // Import API_URL here
-    const { fetchData } = await import('./api.js'); // Import fetchData here
-    const { filterAndSortPokemon } = await import('../script.js'); // Import filterAndSortPokemon from main script
+    const { API_URL } = await import('./state.js'); 
+    const { fetchData } = await import('./api.js');
+    const { filterAndSortPokemon } = await import('../script.js');
 
     const data = await fetchData(`${API_URL}type`);
     if (!data || !data.results) return;
